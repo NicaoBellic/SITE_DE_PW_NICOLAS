@@ -1,0 +1,30 @@
+.horario{
+    font-size: x-large;
+}
+.op{
+    width: 556px;
+    height: 315px;
+    text-align: justify;
+    font-size: larger;
+    border: 1px solid black;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+}
+body {
+    background-color: rgb(209, 231, 172);
+}
+button{
+    width: 200px;
+    height: 50px;   
+    font-size: 25px;
+    background-color:  rgb(182, 187, 113);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+img{
+    border: 1px solid black;
+}
+h2, h1{
+    background-color: rgb(146, 191, 128);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

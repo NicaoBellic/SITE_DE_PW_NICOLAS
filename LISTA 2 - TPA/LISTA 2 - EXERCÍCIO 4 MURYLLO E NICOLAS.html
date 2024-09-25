@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Array 3x3 com Números e Strings</title>
+</head>
+<body>
+    <script>
+        const valores = [[], [], []];
+
+        for (let i = 0; i < 3; i++) {
+            for (let j = 0; j < 3; j++) {
+                const valor = prompt("Digite algo:");
+                const numero = parseFloat(valor);
+                valores[i][j] = !isNaN(numero) ? numero : valor;
+            }
+        }
+        valores.forEach(linha => {
+            linha.forEach(valor => {
+                document.write(`Valor: ${valor}, Tipo: ${typeof valor}<br>`);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA 2 - NICOLAS E MURYLLO</title>
+</head>
+<body>
+    <div id="inputs">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+        <input type="number" class="input">
+    </div>
+    <input type="number" id="multiplicador" placeholder="Multiplicador">
+    <button id="calcular">Calcular</button>
+    <div id="resultado"></div>
+
+    <script>
+        document.getElementById('calcular').addEventListener('click', function() {
+            const inputs = document.querySelectorAll('.input');
+            const multiplicador = parseFloat(document.getElementById('multiplicador').value);
+            const resultadoDiv = document.getElementById('resultado');
+
+            resultadoDiv.innerHTML = '';
+
+            for (let i = 0; i < 3; i++) {
+                let linhaResultado = [];
+                for (let j = 0; j < 3; j++) {
+                    const valor = parseFloat(inputs[i * 3 + j].value);
+                    linhaResultado.push(valor * multiplicador);
+                }
+                resultadoDiv.innerHTML += linhaResultado.join(', ') + '<br>';
+            }
+        });
+    </script>
+</body>
+</html>

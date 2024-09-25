@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>LISTA 2 - MURYLLO E NICOLAS</title>
+</head>
+<body>
+    <script>
+        const numeros = [[], [], []];
+        let maior;
+        for (let i = 0; i < numeros.length; i++) {
+            for (let j = 0; j < 3; j++) {
+                const number = parseFloat(prompt("Digite os valores:"));
+                numeros[i][j] = number;
+                if (maior === undefined || number > maior) {
+                    maior = number;
+                }
+            }
+        }
+        document.write("Maior valor: " + maior);
+    </script>
+</body>
+</html>
+

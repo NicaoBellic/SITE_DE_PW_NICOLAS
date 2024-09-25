@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(209, 231, 172);
+}
+
+.container {
+    width: 100%;
+    display:block;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.item {
+    width: 750px;
+    margin-bottom: 20px; 
+    text-align: center;
+    border-radius: 6px;
+    border-bottom: 2px solid rgb(182, 187, 113);
+}
+
+button {
+    background-color: rgb(148, 191, 128);
+    border-color: rgb(146, 191, 128);
+    width: 100%;
+    height: 55px;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+.autor{
+    border: 1px solid black;
+}
